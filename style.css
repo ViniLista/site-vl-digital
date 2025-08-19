@@ -1,0 +1,229 @@
+body {
+  font-family: 'Lato';
+}
+
+.hero {
+  background-color: #f8fbff;
+}
+
+.hero h1 {
+  color: #1c2c3c;
+}
+
+.hero p {
+  color: #555;
+}
+
+.service-box {
+  transition: all 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  background-color: #ffffff;
+}
+
+.navbar{
+  background-color: #f8fbff;
+}
+
+.logo-header{
+  width: 400px;
+}
+
+/*hero*/
+/*animação maquina de escrever*/
+.typewriter-effect {
+  display: flex;
+  justify-content: left;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.typewriter-effect > .text {
+  max-width: 0;
+  animation: typing 3s steps(25, end) forwards;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typewriter-effect::after {
+  content: " |";
+  animation: blink 1s infinite;
+  animation-timing-function: step-end;
+}
+
+@keyframes typing {
+  75%,
+  100% {
+    max-width: calc(var(--characters) * 1ch);
+  }
+}
+
+@keyframes blink {
+  0%,
+  75%,
+  100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+/*fim animação*/
+.title{
+  font-size: 5rem;
+  color: #1E1E1E;
+  font-weight: bold;
+}
+
+.lead{
+  font-size: 1.5rem;
+  color: #1E1E1E;
+  font-weight: 400;
+  width: 30rem;
+  margin-bottom: 30px;
+}
+
+.btn-banner{
+  background-color: #12cfb3;
+  border: none;
+  color: #1E1E1E;
+}
+
+.btn-banner:hover{
+  background-color: #007BFF;
+}
+
+.svg-service{
+  width: 50px;
+  height: 50px;
+  color: #007BFF !important;
+}
+
+.btn-servicos{
+  background-color: #007BFF;
+  border: none;
+  color: #ffffff;
+}
+
+/*Quem Somos*/
+.quem-somos {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.quem-somos .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quem-somos .content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.quem-somos .logo img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+}
+
+.quem-somos .texto {
+  flex: 1;
+}
+
+.quem-somos .texto h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.quem-somos .texto p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .quem-somos .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quem-somos .texto {
+    margin-top: 20px;
+  }
+}
+
+
+/*footer*/
+footer {
+  background-color: #0b1a34; /* cor escura do footer */
+  color: #fff;
+  padding: 50px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px 0;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-column p, 
+.footer-column a {
+  color: #ccc;
+  text-decoration: none;
+  line-height: 1.8;
+}
+
+.footer-column a:hover {
+  color: #00aaff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #888;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  color: #00aaff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.footer-svg{
+  width: 50px;
+  height: 50px;
+}
+
+
