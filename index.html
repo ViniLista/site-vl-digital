@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VL Digital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/Logo1.png" alt="Logo" class="me-2 logo-header">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item">
+            <a class="btn btn-primary ms-2" href="#contato">Fale conosco</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero py-5">
+    <div class="container d-flex flex-column flex-lg-row align-items-center">
+      <div class="hero-text flex-fill">
+        <div class="typewriter-effect">
+          <div class="text" id="typewriter-text">
+            <h1 class="fw-bold display-4 title typewriter-effect text" id="typewriter-text">VL<br> Digital</h1>
+          </div>
+        </div>
+        <h3 class="lead">Ajudamos sua empresa a vender mais por meio de uma presença digital profissional.</h3>
+        <a href="#servicos" class="btn btn-success btn-lg btn-banner">Conheça nossos serviços</a>
+      </div>
+      <div class="hero-img flex-fill text-center">
+        <img src="assets/banner.png" alt="Exemplo de site" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 style="margin-bottom: 40px;">Serviços</h2>
+      <p>Clique para mais informações</p>
+      <div class="row">
+        
+        <!-- Serviço 1 -->
+        <div class="col-md-4">
+          <div class="service-box p-4 shadow-sm rounded" data-bs-toggle="collapse" data-bs-target="#servico1" style="cursor:pointer;">
+            <div class="mb-3 fs-1 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#007BFF" class="bi bi-display" viewBox="0 0 16 16"><path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145"/></svg></div>
+            <h5>Criação de Sites</h5>
+          </div>
+          <div id="servico1" class="collapse mt-3">
+            <p>Desenvolvemos sites modernos, responsivos e otimizados para atrair clientes e fortalecer sua presença digital.</p>
+            <button class="btn btn-servicos">Saiba Mais</button>
+          </div>
+        </div>
+
+        <!-- Serviço 2 -->
+        <div class="col-md-4">
+          <div class="service-box p-4 shadow-sm rounded" data-bs-toggle="collapse" data-bs-target="#servico2" style="cursor:pointer;">
+            <div class="mb-3 fs-1 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#007BFF" class="bi bi-share-fill" viewBox="0 0 16 16"><path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/></svg></div>
+            <h5>Redes Sociais</h5>
+          </div>
+          <div id="servico2" class="collapse mt-3">
+            <p>Gerenciamos suas redes sociais com estratégias de conteúdo e anúncios para aumentar seu engajamento e vendas.</p>
+            <button class="btn btn-servicos">Saiba Mais</button>
+          </div>
+        </div>
+
+        <!-- Serviço 3 -->
+        <div class="col-md-4">
+          <div class="service-box p-4 shadow-sm rounded" data-bs-toggle="collapse" data-bs-target="#servico3" style="cursor:pointer;">
+            <div class="mb-3 fs-1 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#007BFF" class="bi bi-google" viewBox="0 0 16 16"><path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/></svg></div>
+            <h5>Google</h5>
+          </div>
+          <div id="servico3" class="collapse mt-3">
+            <p>Otimização para mecanismos de busca (SEO) e anúncios no Google Ads para garantir que sua empresa seja encontrada.</p>
+            <button class="btn btn-servicos">Saiba Mais</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quem Somos -->
+  
+
+  <!-- Footer -->
+   <footer>
+    <div class="footer-container">
+      <div class="footer-column col-md-4">
+        <img style="width: 400px;" src="assets/Logo1.png"/>
+      </div>
+
+      <div class="footer-column col-md-4">
+        <h3>Navigation</h3>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="servicos.html">Serviços</a></p>
+        <p><a href="faleconosco.html">Fale Conosco</a></p>
+      </div>
+
+      <div class="footer-column col-md-4">
+        <h3>Informações</h3>
+        <p>(11)97228-2010</p>
+        <p>(11)97228-2010</p>
+        <p>comercial@vldigital.com.br</p>
+        <p>atendimento@vldigital.com.br</p>
+        <p>São Paulo, SP</p>
+      </div>
+
+      <div class="footer-column col-md-4">
+        <h3>Horario de Atendimento</h3>
+        <p>Seg - Sex: 9:00 - 18:00</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright ©2025 VL Digital - Todos os direitos reservados.</p>
+      <div class="social-icons">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
